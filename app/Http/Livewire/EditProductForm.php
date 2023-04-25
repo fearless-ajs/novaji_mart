@@ -17,14 +17,16 @@ class EditProductForm extends Component
     public string $description;
     public object $product;
 
-
-
     protected array $rules = [
         'name'          =>  'required|string|max:255',
         'photo'         =>  'required|image|max:3000',
         'description'   =>  'required|string|max:500',
         'price'         => 'required|numeric|gt:0'
     ];
+
+    public function mount(){
+
+    }
 
     /**
      * @throws \Illuminate\Validation\ValidationException
