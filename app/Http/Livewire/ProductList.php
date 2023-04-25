@@ -38,7 +38,7 @@ class ProductList extends Component
         $this->emit('showProductList');
 
         //Notify User
-        return $this->emit('alert', ['type' => 'success', 'message' => 'Product Added']);
+        return $this->emit('alert', ['type' => 'success', 'message' => 'Product deleted']);
 
     }
 
