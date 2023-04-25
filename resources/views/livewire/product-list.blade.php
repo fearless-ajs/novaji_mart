@@ -9,7 +9,7 @@
                     <p class="text-muted">{{$product->description}}</p>
                     <h5 class="text-center text-primary">${{$product->price}}</h5>
                     <a href="#" class="btn primary-butt" style="">Edit</a>
-                    <a href="#" class="btn btn-danger">Delete</a>
+                    <a href="#" wire:click="deleteProduct({{$product->id}})"  class="btn btn-danger">Delete</a>
                 </div>
             </div>
         @endforeach

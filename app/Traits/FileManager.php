@@ -12,7 +12,7 @@ use Intervention\Image\Facades\Image;
 trait FileManager
 {
     public function deleteProductImage($filename){
-        File::delete(public_path('uploads/img/catalogues/'.$filename));
+        File::delete(public_path('uploads/'.$filename));
     }
 
     public function saveProductImage($image, $disk){
