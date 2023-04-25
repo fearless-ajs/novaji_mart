@@ -33,7 +33,7 @@ class ProductContainer extends Component
     }
 
     public function mount(): void {
-        $this->showCreateForm();
+        $this->showProductList();
     }
 
     public function render()
