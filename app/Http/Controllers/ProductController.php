@@ -2,16 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
+use App\Traits\ApiResponse;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    use ApiResponse;
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $products = Product::all();
+        return $this->successResponse($products, 200);
     }
 
     /**
